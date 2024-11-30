@@ -39,6 +39,13 @@ In order to calculate the loop gain we have given a RC circuit in the feedback l
 
 ![image](https://github.com/user-attachments/assets/7eac96a3-49b3-4560-86d8-618970a19647)
 
+#### Phase margin
+
+![image](https://github.com/user-attachments/assets/4b335ecc-917b-4c3f-9ba1-6eeb3d6fc36d)
+
+The phase margin is **76.77**
+
+
 The output voltage ( Loop gain ) comes out to be close to **58.3db** . The formula for loop gain is Adiff * Apass where Adiff is differential amplifier gain and Apass is the passfet gain.
 
 ## Case 2:- Open Loop PSRR calculation
@@ -91,6 +98,63 @@ In this case we can see that we have given a AC source in the voltage source VDD
 ![image](https://github.com/user-attachments/assets/102533ba-24b7-4ca6-8a21-0296292e25e1)
 
 ![image](https://github.com/user-attachments/assets/ea9f2dfd-6f89-4fc3-b8b6-5530e594ce18)
+
+
+
+# For light load
+
+## Case 1:- Loop gain analysis:-
+
+#### Schematic
+
+![image](https://github.com/user-attachments/assets/eff568e3-e7bb-4538-91d5-c4276706db6e)
+
+#### LTSpice output
+
+![image](https://github.com/user-attachments/assets/fa53ad2d-7eae-4504-831e-e8bab6847c9d)
+
+#### Python plots
+
+![image](https://github.com/user-attachments/assets/03488889-25c5-4a63-8cdc-b5d60af14562)
+
+#### Phase margin
+
+![image](https://github.com/user-attachments/assets/78ec7924-33c4-45e8-b4a0-455907abe2cd)
+
+
+## Case 2:- Open Loop PSRR calculation
+
+#### Schematic
+
+![image](https://github.com/user-attachments/assets/55a79a24-c9bf-4878-ab65-ad170099e1b9)
+
+#### LTSpice Plots
+
+![image](https://github.com/user-attachments/assets/c2672015-6bce-4010-87f6-5b4910b89391)
+
+#### Python plots
+
+![image](https://github.com/user-attachments/assets/62b25429-89a9-49d6-bc9f-8dfd32d74622)
+
+![image](https://github.com/user-attachments/assets/aa84d75e-e64f-488e-aa4a-16539c757983)
+
+## Case 3:- Closed loop PSRR calculation
+
+### Schematic
+
+![image](https://github.com/user-attachments/assets/2a040b24-c4f3-4cd3-90fb-ae7f01303585)
+
+
+#### LTSpice Output:-
+
+![image](https://github.com/user-attachments/assets/49fbebe0-9b72-4279-9a39-b4aaa8a98029)
+
+#### Python plots
+
+![image](https://github.com/user-attachments/assets/be73a4cb-accb-47c9-9cfa-3c4084340091)
+
+![image](https://github.com/user-attachments/assets/0c16b5b9-47d2-4aef-8c59-b9de1d316a25)
+
 
 
 
