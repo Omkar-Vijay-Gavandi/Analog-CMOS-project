@@ -121,6 +121,8 @@ In this case we can see that we have given a AC source in the voltage source VDD
 
 ![image](https://github.com/user-attachments/assets/78ec7924-33c4-45e8-b4a0-455907abe2cd)
 
+The phase margin obtained is 84.95 degrees. This value is more than that of the value obtained for heavy load. Thus proving the point that for light load we get a better phase margin as the 1st pole and the 2nd pole are far apart.
+
 
 ## Case 2:- Open Loop PSRR calculation
 
