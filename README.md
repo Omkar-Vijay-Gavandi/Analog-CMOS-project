@@ -16,6 +16,8 @@ For the below schematic we have three cases wherein we have to find the open loo
 
 Thus in order to simulate this circuit we have made three schematics in LTSpice to calculate the three conditions. We have made a simulation artifact for the same and from that we can find the above mentioned parameters.
 
+# Heavy Load ( 10ma )
+
 ## Case 1:- Loop gain analysis:-
 
 #### Schematic
@@ -101,7 +103,7 @@ In this case we can see that we have given a AC source in the voltage source VDD
 
 
 
-# For light load
+# For light load ( 2 ma )
 
 ## Case 1:- Loop gain analysis:-
 
@@ -122,6 +124,11 @@ In this case we can see that we have given a AC source in the voltage source VDD
 ![image](https://github.com/user-attachments/assets/78ec7924-33c4-45e8-b4a0-455907abe2cd)
 
 The phase margin obtained is 84.95 degrees. This value is more than that of the value obtained for heavy load. Thus proving the point that for light load we get a better phase margin as the 1st pole and the 2nd pole are far apart.
+
+#### Spice Output Log
+
+![image](https://github.com/user-attachments/assets/10f2193c-3a87-4006-971b-fdaf4c401b62)
+
 
 
 ## Case 2:- Open Loop PSRR calculation
