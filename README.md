@@ -95,6 +95,33 @@ In this case we can see that we have given a AC source in the voltage source VDD
 ![image](https://github.com/user-attachments/assets/ea9f2dfd-6f89-4fc3-b8b6-5530e594ce18)
 
 
+## Hand Calculations vs Simulation Results
+
+### For Passfet,
+
+### Hand Calculation:- 
+
+ro = 242 ohms
+gm = 0.1A/V
+Wp1 (first pole location) = 4.14k
+gmro = 24.18
+
+Simulation Results from Spice Error Log:-
+
+ro = 1/gds = 207.42 ohms
+gm = 0.0978
+Wp1 ( first pole location) = 4.132k
+gmro = 20.289
+
+## Hand Calculation vs Simulation Results
+
+| Parameter               | Hand Calculation | Simulation Result | % Difference      |
+|-------------------------|------------------|-------------------|-------------------|
+| **ro (Ω)**             | 242.00          | 207.42            | 14.32%           |
+| **gm (A/V)**           | 0.1000          | 0.0978            | 2.20%            |
+| **Wp1 (Hz)**           | 4.14k           | 4.132k             |            |
+| **gmro**               | 24.18           | 20.289            | 16.08%           |
+
 
 # For light load ( 2 ma )
 
@@ -175,4 +202,23 @@ I have given a pulse at the load with a rise time and fall time of 1u. Also the 
 ![image](https://github.com/user-attachments/assets/23dc06a2-a85d-4a55-8f00-3f49f5f70a8d)
 
 
+## Stability analysis
+
+### For heavy load we get the following curve 
+
+![image](https://github.com/user-attachments/assets/159b4262-fbd9-4e14-ae1b-79680f8f7f9b)
+
+The python plots for the same is as follows:-
+
+![image](https://github.com/user-attachments/assets/181a108d-53f2-46c1-9a15-e0a237ec5b98)
+
+### For light load we get the following curve
+
+![image](https://github.com/user-attachments/assets/c7a3ff2f-fe9c-485c-933c-daddf8d3138d)
+
+The pyton plots are as follows:-
+
+![image](https://github.com/user-attachments/assets/e48c82f1-f800-4617-8118-c13b432e4f86)
+
+From the above analysis we can see that we can see that the unity gain bandwiddth is closer to the second pole for the heavy load case than the light load case. From the phase margin also we can observe that we observe a lesser phase margin of 76 degrees for the heavy load case than that of the light load case. From this analysis we can say that when we apply light load we get a more stable system.
 
