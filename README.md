@@ -61,10 +61,6 @@ The output voltage ( Loop gain ) comes out to be close to **58.3db** . The formu
 
 In order to calculate the open loop PSRR we need to send an AC signal from the source which in our case is VDD. Here we are giving an AC 1 signal in the source. This signal is given to the source of the passfet and the source of pmos in the diffamp. We will ideally want very bad PSRR in the diffamp as we want the OTA output to have all the AC noise such that Vsg of pmos = 0 ( small signal analysis ). Thus all the noise will get rejected and we will get a noise free dc voltage at the output of the LDO. Here in order to calculate the open loop PSRR we have a RC circuit to bias the circuit. You can see AC 0 in the circuit indicating that there is an **open loop in the circuit** . From here we have calculated the open loop PSRR in the circuit. Since there is no feedback in the circuit we can thus say that there will be noise at the output and thus the rejection will be very poor.
 
-#### Output log file
-
-![image](https://github.com/user-attachments/assets/e00ee07f-fca4-445c-9544-d940bc96e594)
-
 #### Output on LTSpice
 
 ![image](https://github.com/user-attachments/assets/7ff05626-2961-4a15-9ead-2e394e6466d7)
@@ -87,10 +83,6 @@ In order to calculate the open loop PSRR we need to send an AC signal from the s
 
 #### Explanation of the artifact
 In this case we can see that we have given a AC source in the voltage source VDD. We want to see the negative feedback in the circuit due to which we will get the output voltage cancelled out (small signal analysis). Here we should observe a high PSRR according to our specifications ( 60db) which tells us that our sizing is perfect. For this circuit we have given a feedback from the output terminal to the input of the diffamp which indicated the feedback path.
-
-#### Output log file
-
-![image](https://github.com/user-attachments/assets/aa32f186-c528-4f10-9875-dac5cec5b9c0)
 
 #### Output on LTSpice
 
