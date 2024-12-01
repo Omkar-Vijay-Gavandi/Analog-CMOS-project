@@ -2,7 +2,7 @@
 
 ## LDO Design
 
-In this project we have designed an LDO subject to different conditions. For this design we are designing the LDO for both externally and internally compensated LDO. We have considered different technology nodes for the same. For the below figure we are considering 45nm technology node. The technology node file is attached [here](https://github.com/Omkar-Vijay-Gavandi/Analog-CMOS-project/blob/main/Spice%20files/45nm_HP.txt). Our aim is to design the LDO for a max and a min load condition. The design for
+In this project we have designed an LDO subject to different conditions. For this design we are designing the LDO for both externally and internally compensated LDO. We have considered different technology nodes for the same. For the below figure we are considering 45nm technology node. The technology node file is attached [here](https://github.com/Omkar-Vijay-Gavandi/Analog-CMOS-project/blob/main/Spice%20files/45nm_HP.txt). Our aim is to design the LDO for a max and a min load condition.
 
 I have designed the following schematic
 
@@ -49,6 +49,7 @@ The phase margin is **76.77**
 
 
 The output voltage ( Loop gain ) comes out to be close to **58.3db** . The formula for loop gain is Adiff * Apass where Adiff is differential amplifier gain and Apass is the passfet gain.
+
 
 ## Case 2:- Open Loop PSRR calculation
 
@@ -129,8 +130,6 @@ The phase margin obtained is 84.95 degrees. This value is more than that of the 
 
 ![image](https://github.com/user-attachments/assets/10f2193c-3a87-4006-971b-fdaf4c401b62)
 
-
-
 ## Case 2:- Open Loop PSRR calculation
 
 #### Schematic
@@ -165,24 +164,23 @@ The phase margin obtained is 84.95 degrees. This value is more than that of the 
 ![image](https://github.com/user-attachments/assets/0c16b5b9-47d2-4aef-8c59-b9de1d316a25)
 
 
+## Transient Analysis
 
+I have given a pulse at the load with a rise time and fall time of 1u. Also the period of the pulse is 10m with a 50% duty cycle. From the below figure we can understand that the output is able to settle within the specified range of time. We are not able to observe any overshoot or undershoot in the output. 
 
+#### Schematic:-
 
+![image](https://github.com/user-attachments/assets/8f3895a3-2f67-4477-b945-ec36c37772cc)
 
+#### Ltspice Output:-
 
+![image](https://github.com/user-attachments/assets/4ba6f9ee-f344-43fb-8105-7759defef3cf)
 
+#### Python Plots:-
 
+![image](https://github.com/user-attachments/assets/3799cae8-0856-47f7-a9da-690c2110d4f2)
 
-
-
-
-
-
-
-
-
-
-
+![image](https://github.com/user-attachments/assets/23dc06a2-a85d-4a55-8f00-3f49f5f70a8d)
 
 
 
