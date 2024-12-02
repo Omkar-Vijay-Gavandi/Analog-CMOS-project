@@ -271,4 +271,25 @@ From the above analysis we can see that we can see that the unity gain bandwiddt
 
 From the plots we can see that we are getting regulation after 1.2 till 1.4v. After this voltage we are still getting 1v output but we can't comment on the circuit since the device has a nominal voltage of 1v and the vds across the mosfets might go above 1v so the device can breakdown.
 
+## Area vs gm/Id plot
+
+For gm/Id = 12 
+
+Area of passfet = 17.82 um2
+Area of pmos diffamp fet = 0.445 um2
+Area of nmos diffamp fet = 0.1156 um2
+Area of Current mirror fet = 1.36 um2
+
+Overall area = 19.781 um2
+
+For gm/Id = 10
+
+Area of passfet = 12.08 um2
+Area of pmos diffamp fet = 0.297 um2
+Area of nmos diffamp fet = 0.1124 um2
+Area of Current mirror fet = 0.9085 um2
+
+Overall area = 13.3979 um2
+
+
 
