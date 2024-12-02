@@ -292,4 +292,23 @@ Area of Current mirror fet = 0.9085 um2
 Overall area = 13.3979 um2
 
 
+## Internal capacitor:-
+
+Case 1:- Loop gain
+
+![image](https://github.com/user-attachments/assets/1a0051ba-8e45-4569-8e8e-88fb77cc989c)
+
+Case 2:- Open Loop PSRR
+
+![image](https://github.com/user-attachments/assets/7d54a363-cf40-4dce-bf7e-8e1e04c41b96)
+
+![image](https://github.com/user-attachments/assets/98043f9b-7e63-417e-a238-127fb5dde7b3)
+
+Case 3:- Closed Loop PSRR
+
+![image](https://github.com/user-attachments/assets/c591684d-7814-4c55-b6cb-f2dba9086bce)
+
+![image](https://github.com/user-attachments/assets/b72cb12b-e66b-48ac-ad79-fcf3ff495563)
+
+
 
