@@ -32,6 +32,84 @@ In order to calculate the loop gain we have given a RC circuit in the feedback l
 
 ![image](https://github.com/user-attachments/assets/c9ab2a3a-f744-4f13-99e3-927b20009abc)
 
+From the above file we can verify that all the devices are in saturation as follows:-
+
+M1:- PMOS 
+    Vsd = 0.651
+    Vsg = 0.651
+    Vtp = 0.489
+    Vsg - vtp = 0.162
+    since vsd > 0.162 the device is in saturation
+    
+
+M2:-  PMOS
+      Vsd = 0.64
+     Vsg = 0.651
+     vtp = 0.489
+    Vsg - vtp = 0.162
+    since vsd > 0.162 the device is in saturation
+
+M3:- PMOS
+     Vsd = 0.367
+     Vsg = 0.64
+     vtp = 0.481
+    Vsg - vtp = 0.159
+    since vsd > 0.159 the device is in saturation
+
+M4:-  NMOS
+     Vds = 0.734
+     Vgs = 0.734
+     vtn = 0.4
+    Vgs - vtn = 0.162
+    since vds > 0.162 the device is in saturation
+
+M5:- NMOS
+     Vds = 0.368
+     Vgs = 0.609
+     vtn = 0.468
+    Vgs - vtn = 0.141
+    since vds > 0.141 the device is in saturation
+
+M6:- NMOS
+     Vds = 0.358
+     Vgs = 0.609
+     vtn = 0.468
+    Vgs - vtn = 0.141
+    since vds > 0.141 the device is in saturation
+
+M7:- NMOS
+     Vds = 0.391
+     Vgs = 0.734
+     vtn = 0.468
+    Vgs - vtn = 0.266
+    since vds > 0.266 the device is in saturation
+
+M8:- NMOS
+     Vds = 1.03
+     Vgs = 0.734
+     vtn = 0.466
+    Vgs - vtn = 0.268
+    since vds > 0.268 the device is in saturation
+
+
+# Transistor Operating Regions Table
+
+This document provides a table summarizing the operating regions of several transistors based on their parameters.
+
+## Table:
+
+| **Transistor** | **Type** | **Vds (V)** | **Vgs/Vsg (V)** | **Vt (V)** | **Vgs/Vsg - Vt (V)** | **Operating Region**   |
+|----------------|----------|-------------|------------------|------------|-----------------------|------------------------|
+| M1            | PMOS     | 0.651       | 0.651           | 0.489      | 0.162                | Saturation             |
+| M2            | PMOS     | 0.64        | 0.651           | 0.489      | 0.162                | Saturation             |
+| M3            | PMOS     | 0.367       | 0.64            | 0.481      | 0.159                | Saturation             |
+| M4            | NMOS     | 0.734       | 0.734           | 0.4        | 0.334                | Saturation             |
+| M5            | NMOS     | 0.368       | 0.609           | 0.468      | 0.141                | Saturation             |
+| M6            | NMOS     | 0.358       | 0.609           | 0.468      | 0.141                | Saturation             |
+| M7            | NMOS     | 0.391       | 0.734           | 0.468      | 0.266                | Saturation             |
+| M8            | NMOS     | 1.03        | 0.734           | 0.466      | 0.268                | Saturation             |
+
+
 
 #### Output on LTSPICE:-
 
