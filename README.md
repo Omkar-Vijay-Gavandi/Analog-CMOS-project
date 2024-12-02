@@ -300,3 +300,17 @@ The pyton plots are as follows:-
 
 From the above analysis we can see that we can see that the unity gain bandwiddth is closer to the second pole for the heavy load case than the light load case. From the phase margin also we can observe that we observe a lesser phase margin of 76 degrees for the heavy load case than that of the light load case. From this analysis we can say that when we apply light load we get a more stable system.
 
+
+## Effect of VDD on the output voltage
+
+#### Schematic
+
+![image](https://github.com/user-attachments/assets/5de1f3fb-e9a0-4dd2-8652-8cee7d2ea588)
+
+#### Output plots
+
+![image](https://github.com/user-attachments/assets/97a7bbb7-3222-4a28-8568-148f42457671)
+
+From the plots we can see that we are getting regulation after 1.2 till 1.4v. After this voltage we are still getting 1v output but we can't comment on the circuit since the device has a nominal voltage of 1v and the vds across the mosfets might go above 1v so the device can breakdown.
+
+
