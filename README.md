@@ -271,25 +271,26 @@ From the above analysis we can see that we can see that the unity gain bandwiddt
 
 From the plots we can see that we are getting regulation after 1.2 till 1.4v. After this voltage we are still getting 1v output but we can't comment on the circuit since the device has a nominal voltage of 1v and the vds across the mosfets might go above 1v so the device can breakdown.
 
-## Area vs gm/Id plot
+# Area vs gm/Id plot
 
-For gm/Id = 12 
+This document summarizes the area calculations for different gm/Id values. The table below lists the areas of individual transistors (passfet, PMOS diffamp FET, NMOS diffamp FET, and current mirror FET) as well as the overall area for each gm/Id value.
 
-Area of passfet = 17.82 um2
-Area of pmos diffamp fet = 0.445 um2
-Area of nmos diffamp fet = 0.1156 um2
-Area of Current mirror fet = 1.36 um2
+## Table: Transistor Area for Different gm/Id Values
 
-Overall area = 19.781 um2
+| **gm/Id** | **Passfet Area (μm²)** | **PMOS Diffamp FET Area (μm²)** | **NMOS Diffamp FET Area (μm²)** | **Current Mirror FET Area (μm²)** | **Overall Area (μm²)** |
+|-----------|-------------------------|----------------------------------|----------------------------------|-----------------------------------|-------------------------|
+| 10        | 12.08                  | 0.297                           | 0.1124                          | 0.9085                           | 13.3979                |
+| 12        | 17.82                  | 0.445                           | 0.1156                          | 1.36                             | 19.781                 |
+| 15        | 32.46                  | 0.544                           | 0.215                           | 2.55                             | 35.769                 |
 
-For gm/Id = 10
+## Notes
 
-Area of passfet = 12.08 um2
-Area of pmos diffamp fet = 0.297 um2
-Area of nmos diffamp fet = 0.1124 um2
-Area of Current mirror fet = 0.9085 um2
+- The **gm/Id** values represent the ratio of transconductance (gm) to drain current (Id).
+- The **Overall Area** is the sum of all individual transistor areas.
+- These calculations are useful for evaluating the area trade-offs associated with different gm/Id values during circuit design.
+- From the above table we can observe that as the gm/Id value increases the overall area of the design increases. This area is primarily dominated by the passfet who has the most area in the circuit given that its width is the most , it being a PMOS .
 
-Overall area = 13.3979 um2
+![image](https://github.com/user-attachments/assets/f8cf3615-fc30-45e7-8f7e-bf3024644f29)
 
 
 ## Internal capacitor:-
