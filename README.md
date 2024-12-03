@@ -57,7 +57,8 @@ This document provides a table summarizing the operating regions of several tran
 
 #### Output on Python:-
 
-![image](https://github.com/user-attachments/assets/7eac96a3-49b3-4560-86d8-618970a19647)
+![image](https://github.com/user-attachments/assets/3252ba88-5d11-443f-b0ca-002f75fb9b61)
+
 
 #### Phase margin
 
@@ -85,10 +86,9 @@ In order to calculate the open loop PSRR we need to send an AC signal from the s
 
 #### Python plots
 
-![image](https://github.com/user-attachments/assets/c1a644cd-d482-4e2f-9d2a-b314b360fade)
+![image](https://github.com/user-attachments/assets/08850f7c-92a8-4e6b-90d9-646895e38fcd)
 
-![image](https://github.com/user-attachments/assets/99e978fb-6fb9-4ad7-ae09-1cd126b99a28)
-
+![image](https://github.com/user-attachments/assets/f73109a2-fc91-46fb-829a-8064fa6d8c59)
 
 
 #### Note:- Always observe the Vota output in volts because it will give you the insight into what AC voltage is coming into the gate of the passfet. It should be close to VDD. If it becomes close to 
@@ -108,9 +108,9 @@ In this case we can see that we have given a AC source in the voltage source VDD
 
 #### Python plots
 
-![image](https://github.com/user-attachments/assets/102533ba-24b7-4ca6-8a21-0296292e25e1)
+![image](https://github.com/user-attachments/assets/f80b76ae-2a9f-47ef-ac13-14aef3a384e4)
 
-![image](https://github.com/user-attachments/assets/ea9f2dfd-6f89-4fc3-b8b6-5530e594ce18)
+![image](https://github.com/user-attachments/assets/17a0280b-618a-4c1b-bc49-6d23df5f6d3f)
 
 
 ## Hand Calculations vs Simulation Results
@@ -137,8 +137,26 @@ gmro = 20.289
 |-------------------------|------------------|-------------------|-------------------|
 | **ro (Ω)**             | 242.00          | 207.42            | 14.32%           |
 | **gm (A/V)**           | 0.1000          | 0.0978            | 2.20%            |
-| **Wp1 (Hz)**           | 4.14k           | 4.132k             |            |
+| **Wp1 (Hz)**           | 4.14k           | 4.132k             |  0.19%          |
 | **gmro**               | 24.18           | 20.289            | 16.08%           |
+
+### For Differential Amplifier,
+
+Adiff = 1000 / 24.18 = 41.35
+
+### Hand Calculation:- 
+
+ro = 242 ohms
+gm = 0.1A/V
+Wp1 (first pole location) = 4.14k
+gmro = 24.18
+
+Simulation Results from Spice Error Log:-
+
+ro = 1/gds = 207.42 ohms
+gm = 0.0978
+Wp1 ( first pole location) = 4.132k
+gmro = 20.289
 
 
 # For light load ( 2 ma )
@@ -155,7 +173,8 @@ gmro = 20.289
 
 #### Python plots
 
-![image](https://github.com/user-attachments/assets/03488889-25c5-4a63-8cdc-b5d60af14562)
+![image](https://github.com/user-attachments/assets/505904f5-ff1f-4b4e-8f94-ecd7c245b1f6)
+
 
 #### Phase margin
 
@@ -197,9 +216,10 @@ This document provides a table summarizing the operating regions of several tran
 
 #### Python plots
 
-![image](https://github.com/user-attachments/assets/62b25429-89a9-49d6-bc9f-8dfd32d74622)
+![image](https://github.com/user-attachments/assets/083f0a4f-4094-4d63-bcb5-c5dac644556b)
 
-![image](https://github.com/user-attachments/assets/aa84d75e-e64f-488e-aa4a-16539c757983)
+![image](https://github.com/user-attachments/assets/b2193462-47ac-44f3-96fb-5378b04153e7)
+
 
 ## Case 3:- Closed loop PSRR calculation
 
@@ -214,9 +234,11 @@ This document provides a table summarizing the operating regions of several tran
 
 #### Python plots
 
-![image](https://github.com/user-attachments/assets/be73a4cb-accb-47c9-9cfa-3c4084340091)
+![image](https://github.com/user-attachments/assets/f560a3dc-0765-49d1-a1f4-0a3ea5b642da)
 
-![image](https://github.com/user-attachments/assets/0c16b5b9-47d2-4aef-8c59-b9de1d316a25)
+![image](https://github.com/user-attachments/assets/2f2d0a33-3308-4c55-964f-cfaf8f8b99f0)
+
+
 
 
 ## Transient Analysis
@@ -233,28 +255,29 @@ I have given a pulse at the load with a rise time and fall time of 1u. Also the 
 
 #### Python Plots:-
 
-![image](https://github.com/user-attachments/assets/3799cae8-0856-47f7-a9da-690c2110d4f2)
+![image](https://github.com/user-attachments/assets/79c4088a-7ad2-4762-8411-288539ce16d0)
 
-![image](https://github.com/user-attachments/assets/23dc06a2-a85d-4a55-8f00-3f49f5f70a8d)
+![image](https://github.com/user-attachments/assets/07b3dfa5-d862-40ab-8bb7-0e25857b8380)
 
 
 ## Stability analysis
 
 ### For heavy load we get the following curve 
 
-![image](https://github.com/user-attachments/assets/159b4262-fbd9-4e14-ae1b-79680f8f7f9b)
+![image](https://github.com/user-attachments/assets/77033727-1fd7-4d1d-b11b-4e0c789f1d04)
 
 The python plots for the same is as follows:-
 
-![image](https://github.com/user-attachments/assets/181a108d-53f2-46c1-9a15-e0a237ec5b98)
+![image](https://github.com/user-attachments/assets/6c110f9a-c617-47b1-92fa-f5ee751562d0)
 
 ### For light load we get the following curve
 
-![image](https://github.com/user-attachments/assets/c7a3ff2f-fe9c-485c-933c-daddf8d3138d)
+![image](https://github.com/user-attachments/assets/7544b974-61c2-4d03-a631-5a44713d8bdd)
 
-The pyton plots are as follows:-
+The python plots are as follows:-
 
-![image](https://github.com/user-attachments/assets/e48c82f1-f800-4617-8118-c13b432e4f86)
+![image](https://github.com/user-attachments/assets/c6e6c015-d850-408a-b522-4d5a5869aa6c)
+
 
 From the above analysis we can see that we can see that the unity gain bandwiddth is closer to the second pole for the heavy load case than the light load case. From the phase margin also we can observe that we observe a lesser phase margin of 76 degrees for the heavy load case than that of the light load case. From this analysis we can say that when we apply light load we get a more stable system.
 
@@ -267,7 +290,7 @@ From the above analysis we can see that we can see that the unity gain bandwiddt
 
 #### Output plots
 
-![image](https://github.com/user-attachments/assets/97a7bbb7-3222-4a28-8568-148f42457671)
+![image](https://github.com/user-attachments/assets/ea7a701e-b33f-455e-b51c-d05d3234685d)
 
 From the plots we can see that we are getting regulation after 1.2 till 1.4v. After this voltage we are still getting 1v output but we can't comment on the circuit since the device has a nominal voltage of 1v and the vds across the mosfets might go above 1v so the device can breakdown.
 
@@ -293,23 +316,166 @@ This document summarizes the area calculations for different gm/Id values. The t
 ![image](https://github.com/user-attachments/assets/f8cf3615-fc30-45e7-8f7e-bf3024644f29)
 
 
-## Internal capacitor:-
+# Analog_ic_design_project
 
-Case 1:- Loop gain
+# Internally Compensated LDO
 
-![image](https://github.com/user-attachments/assets/1a0051ba-8e45-4569-8e8e-88fb77cc989c)
+## Low Load(2ma)
 
-Case 2:- Open Loop PSRR
+### Case-1: Loop gain analysis:-
 
-![image](https://github.com/user-attachments/assets/7d54a363-cf40-4dce-bf7e-8e1e04c41b96)
+#### Schematic
 
-![image](https://github.com/user-attachments/assets/98043f9b-7e63-417e-a238-127fb5dde7b3)
-
-Case 3:- Closed Loop PSRR
-
-![image](https://github.com/user-attachments/assets/c591684d-7814-4c55-b6cb-f2dba9086bce)
-
-![image](https://github.com/user-attachments/assets/b72cb12b-e66b-48ac-ad79-fcf3ff495563)
+![Screenshot 2024-12-03 215715](https://github.com/user-attachments/assets/fee7a096-3ef0-4455-93e6-fe4644fbe93d)
 
 
+#### Output log file:-
 
+![image](https://github.com/user-attachments/assets/fe15a521-710d-4b12-8d1d-5b0adb58d749)
+
+
+# Transistor Operating Regions Table
+
+This document provides a table summarizing the operating regions of several transistors based on their parameters.
+
+## Table:
+
+| *Transistor* | *Type* | *Vds (V)* | *Vgs/Vsg (V)* | *Vt (V)* | *Vgs/Vsg - Vt (V)* | *Operating Region*   |
+|----------------|----------|-------------|------------------|------------|-----------------------|------------------------|
+| M1            | PMOS     | 0.652       | 0.652           | 0.489      | 0.163                | Saturation             |
+| M2            | PMOS     | 0.522       | 0.652           | 0.490      | 0.162                | Saturation             |
+| M3            | PMOS     | 0.364       | 0.522            | 0.481      | 0.041                | Saturation             |
+| M4            | NMOS     | 0.734       | 0.734           | 0.467        | 0.267                | Saturation             |
+| M5            | NMOS     | 0.485       | 0.607           | 0.468      | 0.139                | Saturation             |
+| M6            | NMOS     | 0.355       | 0.609           | 0.468      | 0.141                | Saturation             |
+| M7            | NMOS     | 0.393       | 0.734           | 0.468      | 0.266                | Saturation             |
+| M8            | NMOS     | 1.04        | 0.734           | 0.466      | 0.268                | Saturation             |
+
+
+### Output on Python:-
+
+![image](https://github.com/user-attachments/assets/59d290cc-2641-4349-8903-37ea35e7dffb)
+
+
+### Phase margin
+
+![Screenshot 2024-12-03 215638](https://github.com/user-attachments/assets/d2b6bc1d-3ad0-491b-87d3-3b8aa7483429)
+
+
+## Case 2:- Open Loop PSRR calculation
+
+### Schematic
+
+![image](https://github.com/user-attachments/assets/db534bfc-6962-404b-a3ac-95dc34842b4c)
+
+
+### Explanation of the artifact
+
+### Python plots
+
+![image](https://github.com/user-attachments/assets/65a99641-081f-4fbe-b99e-5cc4720080f9)
+
+![image](https://github.com/user-attachments/assets/f0a9fc51-7fd4-4456-a346-604a08474d6b)
+
+
+## Case 3:- Closed Loop PSRR Calculation
+
+### Schematic
+
+![image](https://github.com/user-attachments/assets/3af5bdd6-786e-43df-8d68-c779ad49a757)
+
+### Python plots
+
+![image](https://github.com/user-attachments/assets/7111e192-8b1f-4fe8-a14a-c59e2d573780)
+
+![image](https://github.com/user-attachments/assets/1c13e55c-8e20-4695-824a-4bc81c249095)
+
+
+### Hand Calculations vs Simulation Results
+
+
+# For heavy load ( 10 ma )
+
+## Case 1:- Loop gain analysis:-
+
+### Schematic
+
+![Screenshot 2024-12-03 215850](https://github.com/user-attachments/assets/ef1ab793-0dc1-4552-bfd4-999130da643c)
+
+
+### Python plots
+
+![image](https://github.com/user-attachments/assets/9da2dfa9-82bd-4dce-8acd-4f49614c0e35)
+
+
+### Phase margin
+
+![Screenshot 2024-12-03 215830](https://github.com/user-attachments/assets/b3944f33-0b71-4fd6-9b2e-25f150c0f6ff)
+
+
+### Spice Output Log
+
+![image](https://github.com/user-attachments/assets/9d00a5a7-42af-46dc-b791-85d6535928f8)
+
+
+# Transistor Operating Regions Table
+
+This document provides a table summarizing the operating regions of several transistors based on their parameters.
+
+## Table:
+
+| *Transistor* | *Type* | *Vds (V)* | *Vgs/Vsg (V)* | *Vt (V)* | *Vgs/Vsg - Vt (V)* | *Operating Region*   |
+|----------------|----------|-------------|------------------|------------|-----------------------|------------------------|
+| M1            | PMOS     | 0.651       | 0.651           | 0.489      | 0.162                | Saturation             |
+| M2            | PMOS     | 0.64        | 0.651           | 0.489      | 0.162                | Saturation             |
+| M3            | PMOS     | 0.367       | 0.64            | 0.481      | 0.159                | Saturation             |
+| M4            | NMOS     | 0.734       | 0.734           | 0.467        | 0.267                | Saturation             |
+| M5            | NMOS     | 0.368       | 0.609           | 0.468      | 0.141                | Saturation             |
+| M6            | NMOS     | 0.358       | 0.609           | 0.468      | 0.141                | Saturation             |
+| M7            | NMOS     | 0.391       | 0.734           | 0.468      | 0.266                | Saturation             |
+| M8            | NMOS     | 1.03        | 0.734           | 0.466      | 0.268                | Saturation             |
+
+
+
+## Case 2:- Open Loop PSRR calculation
+
+### Schematic
+
+![image](https://github.com/user-attachments/assets/ec1025c3-24ea-4bee-8f06-04e198f5c7e2)
+
+
+### Python plots
+
+![image](https://github.com/user-attachments/assets/504467fc-6ca2-4249-8103-2219dfb7a064)
+
+![image](https://github.com/user-attachments/assets/d33f07f4-caf3-4425-8186-4f86177b9a49)
+
+
+
+## Case 3:- Closed loop PSRR calculation
+
+### Schematic
+
+![image](https://github.com/user-attachments/assets/112705cf-8831-4b34-a88a-96ed6861a41c)
+
+### Python plots
+
+![image](https://github.com/user-attachments/assets/68666a96-e34d-401e-a840-8b471203acb7)
+
+![image](https://github.com/user-attachments/assets/e4cf3612-c7a5-471b-a242-97848e7a7737)
+
+## Transient Analysis
+
+![image](https://github.com/user-attachments/assets/42cbfb74-529d-4cf7-9632-338f817f590e)
+
+
+### Schematic
+
+![image](https://github.com/user-attachments/assets/f58b0da4-1fec-4ac7-bac4-430dd49bf492)
+
+
+
+### Ltspice Output:-
+![image](https://github.com/user-attachments/assets/c3b5884f-3f67-4d78-a7ab-df21042d98df)
+
+### Python Plots:-
