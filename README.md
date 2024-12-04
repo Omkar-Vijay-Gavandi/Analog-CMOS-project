@@ -466,16 +466,13 @@ This document provides a table summarizing the operating regions of several tran
 
 ## Transient Analysis
 
-![image](https://github.com/user-attachments/assets/42cbfb74-529d-4cf7-9632-338f817f590e)
-
-
 ### Schematic
 
 ![image](https://github.com/user-attachments/assets/f58b0da4-1fec-4ac7-bac4-430dd49bf492)
 
 
+### Python Plots:-
 
-### Ltspice Output:-
-![image](https://github.com/user-attachments/assets/c3b5884f-3f67-4d78-a7ab-df21042d98df)
+![image](https://github.com/user-attachments/assets/f2118e8d-c02e-45b9-8217-fff5728f80dd)
 
-### Python Plots:-
+![image](https://github.com/user-attachments/assets/a3a94d7c-8979-40eb-8559-1e3a8762c1ec)
