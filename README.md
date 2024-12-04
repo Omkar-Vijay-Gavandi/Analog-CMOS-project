@@ -312,8 +312,29 @@ This document summarizes the area calculations for different gm/Id values. The t
 - The **Overall Area** is the sum of all individual transistor areas.
 - These calculations are useful for evaluating the area trade-offs associated with different gm/Id values during circuit design.
 - From the above table we can observe that as the gm/Id value increases the overall area of the design increases. This area is primarily dominated by the passfet who has the most area in the circuit given that its width is the most , it being a PMOS .
+- We can observe that the area increases but the device is going in the subthreshold region as the overdrive voltage decreases. The Vgs is also decreasing assuming that the threshold voltage remains the same. Based on this we can say that the source voltage required to drive the LDO will decrease and also the bias currents required to bias the mosfets will reduce and thus we require less power to drive the entire circuit. 
+
 
 ![image](https://github.com/user-attachments/assets/f8cf3615-fc30-45e7-8f7e-bf3024644f29)
+
+## Comparison of different FOM ( Figure of Merits ) at different lengths
+
+### For NMOS
+
+gmro = 7 for length = 45nm
+gmro = 30 for length = 67.5nm
+gmro = 135 for length = 225nm
+
+Id/w = 170 for length = 45nm
+Id/w = 120 for length = 67.5nm
+Id/w = 40 for length = 225nm
+
+ft = 180Ghz for length = 45nm
+ft = 100Ghz for length = 67.5nm
+ft = 10Ghz for length = 225nm
+
+
+
 
 
 # Analog_ic_design_project
