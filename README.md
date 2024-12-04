@@ -468,8 +468,7 @@ This document provides a table summarizing the operating regions of several tran
 
 ### Schematic
 
-![image](https://github.com/user-attachments/assets/f58b0da4-1fec-4ac7-bac4-430dd49bf492)
-
+![image](https://github.com/user-attachments/assets/14acb753-7ff5-4fcf-8249-fbacf9a5a891)
 
 ### Python Plots:-
 
