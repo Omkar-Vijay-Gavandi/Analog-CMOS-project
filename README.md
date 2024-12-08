@@ -377,6 +377,8 @@ This document provides a table summarizing the operating regions of several tran
 
 ![Screenshot 2024-12-03 215638](https://github.com/user-attachments/assets/d2b6bc1d-3ad0-491b-87d3-3b8aa7483429)
 
+![image](https://github.com/user-attachments/assets/0f7718d1-bc83-4664-bb2b-c2f7f40e0524)
+
 
 ## Case 2:- Open Loop PSRR calculation
 
@@ -427,6 +429,9 @@ This document provides a table summarizing the operating regions of several tran
 ### Phase margin
 
 ![Screenshot 2024-12-03 215830](https://github.com/user-attachments/assets/b3944f33-0b71-4fd6-9b2e-25f150c0f6ff)
+
+![image](https://github.com/user-attachments/assets/09339e57-e322-4c21-baa9-23e7887c8d74)
+
 
 
 ### Spice Output Log
