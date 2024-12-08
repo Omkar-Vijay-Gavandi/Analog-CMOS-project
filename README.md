@@ -317,22 +317,17 @@ This document summarizes the area calculations for different gm/Id values. The t
 
 ![image](https://github.com/user-attachments/assets/f8cf3615-fc30-45e7-8f7e-bf3024644f29)
 
-## Comparison of different FOM ( Figure of Merits ) at different lengths
+## Comparitive analysis between 180nm technology node and 45nm technology node for NMOS
 
-### For NMOS
+| Parameter         | 180nm Technology Node | 45nm Technology Node |
+|--------------------|-----------------------|-----------------------|
+| **gmro**          | 20                    | 6.721                |
+| **Id/W** (μA/μm)  | 28                    | 154.324              |
+| **fT** (Hz)       | 1.6e10                | 18.93e10             |
 
-gmro = 7 for length = 45nm
-gmro = 30 for length = 67.5nm
-gmro = 135 for length = 225nm
-
-Id/w = 170 for length = 45nm
-Id/w = 120 for length = 67.5nm
-Id/w = 40 for length = 225nm
-
-ft = 180Ghz for length = 45nm
-ft = 100Ghz for length = 67.5nm
-ft = 10Ghz for length = 225nm
-
+For gmro we know that as that as length decreases ro decreases so the value of gmro decreases. Also ro is the dominant factor in gmro so overall gmro decreases.
+For Id/w, if length decreases Id increases so overall Id/w increases which can be obesrved from the values.
+For ft , if length decreases , gm increases , so overall ft increases which can be obserevd from the above table.
 
 
 
