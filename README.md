@@ -62,9 +62,9 @@ This document provides a table summarizing the operating regions of several tran
 
 #### Phase margin
 
-![image](https://github.com/user-attachments/assets/4b335ecc-917b-4c3f-9ba1-6eeb3d6fc36d)
+![image](https://github.com/user-attachments/assets/56499ec5-458f-4eaa-a9de-39557e758819)
 
-The phase margin is **76.77**
+The phase margin is **77.10**
 
 
 The output voltage ( Loop gain ) comes out to be close to **58.3db** . The formula for loop gain is Adiff * Apass where Adiff is differential amplifier gain and Apass is the passfet gain.
@@ -178,9 +178,9 @@ gmro = 20.289
 
 #### Phase margin
 
-![image](https://github.com/user-attachments/assets/78ec7924-33c4-45e8-b4a0-455907abe2cd)
+![image](https://github.com/user-attachments/assets/0e024eaf-2ae5-425e-a9af-8279b341b041)
 
-The phase margin obtained is 84.95 degrees. This value is more than that of the value obtained for heavy load. Thus proving the point that for light load we get a better phase margin as the 1st pole and the 2nd pole are far apart.
+The phase margin obtained is 84.74 degrees. This value is more than that of the value obtained for heavy load. Thus proving the point that for light load we get a better phase margin as the 1st pole and the 2nd pole are far apart.
 
 #### Spice Output Log
 
